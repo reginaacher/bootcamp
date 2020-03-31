@@ -1,1 +1,3 @@
-files: []
+files:
+  - source: /projects/01-card-validation/README.md
+    translation: /%two_letters_code%/projects/01-card-validation/%original_file_name%
