@@ -15,9 +15,9 @@
 
 O algoritmo de Luhn, também chamado de módulo 10, é um método de soma de verificação, usado para validar números de identificação; como o IMEI de telefones celulares, cartões de crédito etc.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); a todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10, debemos sumar los dígitos del resultado; el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+Este algoritmo es simple. Obtemos o inverso do número a ser verificado (que contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem ser multiplicados por dois; se esse número for maior ou igual a 10, devemos adicionar os dígitos do resultado; o número a verificar será válido se a soma de seus dígitos finais for um múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![Gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ## 2. Resumo do Projeto
 
@@ -33,19 +33,19 @@ Simplificando, você aprenderá a:
 
 * Organizar seu tempo e priorizar tarefas em um ambiente de alta insegurança.
 * Compreender as necessidades do usuário e como propor uma solução.
-* Compreendr a importância do processo de prototipagem durante a criação de um produto digital.
+* Compreender a importância do processo de prototipagem durante a criação de um produto digital.
 * Conhecer os princípios básicos do design visual.
 * Usar tags HTML semânticas e os elementos de formulário.
 * Mostrar elementos do formulário na tela usando **HTML** e **CSS**.
 * Empregar diversos tipos de seletores em CSS: de elemento, de tipo, de ID.
 * Empregar o modelo de caixa CSS (borda, margem, preenchimento).
 * Determinar as regras de estilo em CSS.
-* Permitir ao usuário interagir com elementos do DOM e fazer com que o aplicativo responda quando ocorrerem esses **eventos do DOM**.
+* Permitir ao usuário que interaja com elementos do DOM e faça com que o aplicativo responda quando ocorrerem esses **eventos do DOM**.
 * Manipular _**strings**_ (cadeias de texto).
 * Empregar controle de fluxo (loops, condicionais, ...).
 * Atualizar a tela com os resultados (manipular o DOM) mediante **innerHTML** o **textContent**.
 * ** Implementar funções **, dada uma descrição do seu comportamento.
-* Verificar se suas funções realizam as coisas para as quais foram criadas (** testes de unidade </em>) com [ Jest ](https://jestjs.io/es-ES/) **).
+* Verificar se suas funções realizam as tarefas para as quais foram criadas (** testes de unidade </em>) com [ Jest ](https://jestjs.io/es-ES/) **).
 * Configure sua conta git.
 * Realizar _ bifurque _ e _ clonar _ o repositório do projeto.
 * Manter atualizadas as alterações em seu repositório remoto (commit, pull, push).
@@ -65,8 +65,8 @@ Empregue apenas caracteres numéricos (dígitos) no cartão para validar [0-9].
 No ` README.md `, conte-nos como você pensou sobre os usuários e qual foi seu processo para definir o produto final a nível da experiência e da interface.
 
 * Quem são os principais usuários do produto.
-* Quais os objetivos de estes usuários em relação a seu produto.
-* Como você acha que o produto que está criando resolverá os problemas deles.
+* Quais os objetivos destes usuários em relação a seu produto.
+* Como você considera que o produto que está criando resolverá os problemas dos usuários.
 
 ### Interface do usuário (UI)
 
@@ -188,40 +188,40 @@ Comece a codificar! :rocket: </ol>
 
 Aqui está um vídeo de Michelle que mostra o algoritmo de Luhn e mais algumas coisas que você deve saber para resolver este projeto. Ouça com atenção e siga os conselhos dela! :)
 
-[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
+[![dicas de cartão de crédito](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
 [Link](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
-Terminal y shell de UNIX:
+Terminal e shell de UNIX:
 
-[![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
+[![Lista de reprodução de terminal e shell do UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
 [Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
-Control de versiones y trabajo colaborativo con Git y GitHub:
+Controle de versão e trabalho colaborativo com o Git e o GitHub:
 
-[![Playlist de control de versiones y trabajo colaborativo](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
+[![Lista de reprodução de controle de versões e trabalho colaborativo ](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
 
 [Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
 
-Diseño de experiencia de usuario (User Experience Design):
+Design da experiência do usuário (User Experience Design):
 
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
+* Concepção
+* Prototipagem (desenho)
+* Testes e Repetição
 
-Desarrollo Front-end:
+Desenvolvimento de front-end:
 
 * Valores
 * Tipos
-* Variables
-* Control de flujo
-* Tests unitarios
-* [Documentación de NPM](https://docs.npmjs.com/)
+* Variáveis
+* Controle de Fluxo
+* Testes unitários
+* [Documentação do NPM](https://docs.npmjs.com/)
 
-Organización del Trabajo:
+Organização do Trabalho:
 
-* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
-* [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a poco a lo largo del -_bootcamp_.
-* [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
+* [Metodologias Ágeis](https://www.youtube.com/watch?v=v3fLx7VHxGM)
+* [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
+* [Scrum em Detalhe](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). Não é esperado que você faça tudo isso neste projeto. Vamos nos aprofundar gradualmente ao longo do - _ bootcamp </ 0>.</p></li>
+* [Blog: como funciona o algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).</ul>
