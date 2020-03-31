@@ -74,7 +74,7 @@ A interface deve permitir ao usuário:
 
 * Inserir o número que desejamos validar.
 * Constatar se o resultado é válido ou não.
-* Oculte todos os dígitos do número do cartão menos os últimos 4 caracteres.
+* Ocultar todos os dígitos do número do cartão, excetuando os últimos 4 caracteres.
 * Não deve poder inserir um campo vazio.
 
 ### UX (Design da experiência do usuário)
@@ -105,13 +105,13 @@ Ele deve conter o seguinte:
 
 #### Visualmente (HTML e CSS)
 
-Você precisará definir exatamente o protótipo final que você criou na ferramenta de design, de protótipo que você escolheu usando HTML e CSS. Nesse momento, você escolherá as cores, o tipo de fonte etc. que irá usar.
+Você precisará definir exatamente o protótipo final que você criou na ferramenta de design, de protótipo que você escolheu usando HTML e CSS. Nesse momento, você escolherá as cores, o tipo de fonte, etc. que irá usar.
 
 Abaixo, descrevemos os arquivos que você usará:
 
 ##### `src/index.html`
 
-Este arquivo contém o conteúdo que será mostrado ao usuário (esqueleto HTML). Você encontrará três marcadores iniciais que, se você quiser, pode excluir e começar do zero:
+Este arquivo contém o conteúdo que será exibido ao usuário (esqueleto HTML). Você encontrará três marcadores iniciais que, se você quiser, poderá excluir e começar do zero:
 
 * `<header>`: cabeçalho do seu projeto.
 * `<main>`: conteúdo principal do seu projeto.
@@ -133,7 +133,7 @@ Você terá 2 arquivos JavaScript que separam responsabilidades, eis o que você
 
 Aqui você escreverá as funções necessárias para que o usuário possa verificar o cartão de crédito e ocultar os dígitos do número do cartão. Esta função deve ser pura e independente do DOM.
 
-Para isso, você deve implementar o ** validador de objeto ` ` **, que já está _ exportado _ no _ padrão _. Este objeto (` validador `) contémdois métodos (` isValid ` e ` maskify`):
+Para isso, você deve implementar o ** validador de objeto ` ` **, que já está _ exportado _ no _ padrão _. Este objeto (` validador `) contém dois métodos (` isValid ` e ` maskify`):
 
 * **` validator.isValid (creditCardNumber) `** ` creditCardNumber ` é uma ` sequência ` com o número do cartão a ser verificado. Esta função deve retornar um ` boolean `, dependendo de sua validade, de acordo com o [ algoritmo Luhn ](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
 
@@ -151,13 +151,13 @@ Para isso, você deve implementar o ** validador de objeto ` ` **, que já está
 ##### `src/index.js
 `
 
-Aqui, você escreverá todo o código relacionado à interação do DOM (selecione, atualize e manipule elementos do DOM e eventos). Ou seja, nesse arquivo, você precisará ativar as funções ` isValid ` e ` maskify ` conforme necessário para atualizar o resultado na tela (UI).
+Aqui, você escreverá todo o código relacionado à interação do DOM (selecione, atualize e manipule elementos do DOM e eventos). Ou seja, nesse arquivo, você precisará ativar as funções ` isValid ` e ` maskify ` conforme seja necessário para atualizar o resultado na tela (UI).
 
 ##### `test/validator.spec.js
 `
 
-Nesse arquivo, você deverá concluir os testes de unidade das funções ` validator.isValid (creditCardNumber) ` e ` validator.maskify (creditCardNumber) ` implementadas nas ` validator.js </ 0 > usando <a href="https://jestjs.io/es-ES/"> Jest </a>.
-Seus testes de unidade devem proporcionar 70% nas <em x-id="4"> coberturas </em>, <em x-id="4"> instruções </em>, <em x-id="4"> funções </em> e <em x-id="4"> linhas < / 0> (linhas); e um mínimo de 50% de <em x-id="4"> ramificações </em>.</p>
+Nesse arquivo, você deverá concluir os testes de unidade das funções ` validator.isValid (creditCardNumber) ` e ` validator.maskify (creditCardNumber) ` implementadas em ` validator.js </ 0 > usando <a href="https://jestjs.io/es-ES/"> Jest </a>.
+Seus testes de unidade devem proporcionar 70% nas <em x-id="4"> coverage (coberturas) </em>, <em x-id="4"> statements (instruções) </em>, <em x-id="4"> functions (funções) </em> e lines <em x-id="4">  (linhas); e um mínimo de 50% de <em x-id="4"> ramificações </em>.</p>
 
 <hr />
 
@@ -172,7 +172,7 @@ Seus testes de unidade devem proporcionar 70% nas <em x-id="4"> coberturas </em>
 <a href="https://github.com/Laboratoria/bootcamp/tree/master/topics/shell"> Shell UNIX </a>, que é um pequeno programa que interpreta linhas de comando (command-line
 interpreter), além de ter o <a href="https://github.com/Laboratoria/bootcamp/tree/master/topics/scm/01-git"> git </a> instalado. Se você usa um sistema operacional "UNIX-like", como GNU / Linux ou MacOS, já possui um <em x-id="4"> shell </em> (terminal) instalado por padrão (e provavelmente <code> git `) também. Se você usa o Windows, pode utilizar a versão completa do [ Cmder ](https://cmder.net/) que inclui [ Git bash ](https://git-scm.com/download/win) e, se tiver o Windows 10 ou superior, pode usar o [ Windows Subsystem for Linux ](https://docs.microsoft.com/en-us/windows/wsl/install-win10).</li>
 3
-Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.github.com/articles/fork-a-repo/) do repo da sua coorte, seus _ treinadores _ compartilharão um _ link _ com você para um repo e fornecerão acesso de leitura nesse repositório. O outro membro da equipe deve bifurcar ** o o repositório do seu companheiro ** e [ configurar ](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um ` remoto ` para este.
+Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.github.com/articles/fork-a-repo/) do repo da sua coorte, seus _ treinadores _ compartilharão um _ link _ com você para um repo e fornecerão acesso de leitura nesse repositório. O outro membro da equipe deve bifurcar ** do repositório do seu companheiro ** e [ configurar ](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um ` remoto ` para este.
 4
 : arrow_down: [ Clone ](https://help.github.com/articles/cloning-a-repository/) seu _ fork _ no seu computador (cópia local).
 5
@@ -180,7 +180,7 @@ Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.githu
 6
 Se tudo correu bem, você poderá executar o: traffic_light: testes de unidade com o comando (unit tests) ` npm test `.
 7
-Para ver a interface do seu programa no navegador, use o comando ` npm start ` para iniciar o servidor da web e vá para ` http: // localhost: 5000 ` no seu navegador.
+Para visualizar a interface do seu programa no navegador, use o comando ` npm start ` para iniciar o servidor da web e vá para ` http: // localhost: 5000 ` no seu navegador.
 8
 Comece a codificar! :rocket: </ol>
 
@@ -223,5 +223,5 @@ Organização do Trabalho:
 
 * [Metodologias Ágeis](https://www.youtube.com/watch?v=v3fLx7VHxGM)
 * [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum em Detalhe](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). Não é esperado que você faça tudo isso neste projeto. Vamos nos aprofundar gradualmente ao longo do - _ bootcamp </ 0>.</p></li>
-* [Blog: como funciona o algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).</ul>
+* [Scrum em Detalhe](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). Não é esperado que você faça tudo isso neste projeto. Vamos nos aprofundar gradualmente ao longo do - bootcamp
+* [Blog: como funciona o algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
