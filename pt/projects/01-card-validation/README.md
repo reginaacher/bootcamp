@@ -1,139 +1,139 @@
-# Tarjeta de crédito válida
+# Cartão de Crédito Válido
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+* [1. Preâmbulo](#1-preámbulo)
+* [2. Resumo do Projeto](#2-resumen-del-proyecto)
+* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizaje)
+* [4. Considerações Gerais](#4-consideraciones-generales)
+* [5. Critérios mínimos de aceitação do projeto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [6. Dicas e leituras adicionais](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
-## 1. Preámbulo
+## 1. Preâmbulo
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn), también llamado algoritmo de módulo 10, es un método de suma de verificación, se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
+O algoritmo de Luhn, também chamado de módulo 10, é um método de soma de verificação, usado para validar números de identificação; como o IMEI de telefones celulares, cartões de crédito etc.
 
 Este algoritmo es simple. Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); a todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10, debemos sumar los dígitos del resultado; el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 ![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
-## 2. Resumen del proyecto
+## 2. Resumo do Projeto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un usuario validar el número de una tarjeta de crédito. Además, tendrás que implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos los últimos cuatro.
+Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário validar o número de um cartão de crédito.  Além disso, você precisará implementar a funcionalidade para ocultar todos os dígitos de um cartão, exceto os quatro últimos.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc.
+O tema é livre. Você deve pensar em quais situações da vida real um cartão de crédito precisaria ser validado e em como deveria ser a experiência do usuário (telas, explicações, mensagens, cores, marca?) Etc.
 
-## 3. Objetivos de aprendizaje
+## 3. Objetivos de Aprendizagem
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript como tecnologías.
+Trabalhando em pares, eles aprenderão a criar um aplicativo Web que irá interagir com o usuário final através do navegador, usando HTML, CSS e JavaScript como tecnologias.
 
-Dicho en palabras sencillas, aprenderás a:
+Simplificando, você aprenderá a:
 
-* Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-* Entender las **necesidades del usuario** y cómo proponer una solución.
-* Entender la importancia del proceso de prototipado durante la creación de un producto digital.
-* Conocer los principios básicos del diseño visual.
-* Utilizar etiquetas semánticas de HTML y elementos de formulario.
-* Mostrar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-* Utilizar diversos tipos de selectores en CSS: de elemento, de clase, de id.
-* Utilizar el modelo de cajas de CSS (border, margin, padding).
-* Definir reglas de estilo en CSS.
-* Permitir al usuario interactuar con elementos del DOM y hacer que la aplicación responda cuando ocurran esos **eventos del DOM**.
-* Manipular _**strings**_ (cadenas de texto).
-* Usar **control de flujo** (bucles, condicionales, ...).
-* Actualizar la pantalla con los resultados (**manipular el DOM**) a través de **innerHTML** o **textContent**.
-* **Implementar funciones** dada una descripción de su comportamiento.
-* Verificar que tus funciones hagan las cosas para las que fueron creadas (**pruebas unitarias (_unit tests_) con [Jest](https://jestjs.io/es-ES/)**).
-* Configurar tu cuenta de git.
-* Hacer _fork_ y _clonar_ el repositorio del proyecto.
-* Mantener actualizado los cambios en tu repositorio remoto (commit, pull, push).
-* Desplegar tu proyecto en [GitHub Pages](https://pages.github.com).
+* Organizar seu tempo e priorizar tarefas em um ambiente de alta insegurança.
+* Compreender as necessidades do usuário e como propor uma solução.
+* Compreendr a importância do processo de prototipagem durante a criação de um produto digital.
+* Conhecer os princípios básicos do design visual.
+* Usar tags HTML semânticas e os elementos de formulário.
+* Mostrar elementos do formulário na tela usando **HTML** e **CSS**.
+* Empregar diversos tipos de seletores em CSS: de elemento, de tipo, de ID.
+* Empregar o modelo de caixa CSS (borda, margem, preenchimento).
+* Determinar as regras de estilo em CSS.
+* Permitir ao usuário interagir com elementos do DOM e fazer com que o aplicativo responda quando ocorrerem esses **eventos do DOM**.
+* Manipular _**strings**_ (cadeias de texto).
+* Empregar controle de fluxo (loops, condicionais, ...).
+* Atualizar a tela com os resultados (manipular o DOM) mediante **innerHTML** o **textContent**.
+* ** Implementar funções **, dada uma descrição do seu comportamento.
+* Verificar se suas funções realizam as coisas para as quais foram criadas (** testes de unidade </em>) com [ Jest ](https://jestjs.io/es-ES/) **).
+* Configure sua conta git.
+* Realizar _ bifurque _ e _ clonar _ o repositório do projeto.
+* Manter atualizadas as alterações em seu repositório remoto (commit, pull, push).
+* Implantar seu projeto nas [ Páginas do GitHub ](https://pages.github.com).
 
-## 4. Consideraciones generales
+## 4. Considerações Gerais
 
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
+* A equipe de treinadores fornecerá a você sugestões de horários e orientações sobre como trabalhar sozinho ou em equipe. Lembre-se que cada pessoa aprende em um ritmo diferente.
+* O projeto será entregue carregando seu código no GitHub (commit / push) e a interface será implantada usando as páginas do GitHub. Caso desconheça o GitHub não se preocupe, o conhecerá ao longo do projeto.
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 5. Critérios mínimos de aceitação do projeto
 
-Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].
+Empregue apenas caracteres numéricos (dígitos) no cartão para validar [0-9].
 
-### Definición del producto
+### Definição do Produto
 
-En el `README.md`, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
+No ` README.md `, conte-nos como você pensou sobre os usuários e qual foi seu processo para definir o produto final a nível da experiência e da interface.
 
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+* Quem são os principais usuários do produto.
+* Quais os objetivos de estes usuários em relação a seu produto.
+* Como você acha que o produto que está criando resolverá os problemas deles.
 
-### Interfaz de usuario (UI)
+### Interface do usuário (UI)
 
-La interfaz debe permitir al usuario:
+A interface deve permitir ao usuário:
 
-* Insertar el número que queremos validar.
-* Ver el resultado si es válido o no.
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres.
-* No debe poder ingresar un campo vacío.
+* Inserir o número que desejamos validar.
+* Constatar se o resultado é válido ou não.
+* Oculte todos os dígitos do número do cartão menos os últimos 4 caracteres.
+* Não deve poder inserir um campo vazio.
 
-### UX (Diseño de experiencia de usuario)
+### UX (Design da experiência do usuário)
 
-Antes de iniciar a codear, debes entender el problema que quieres solucionar y cómo tu aplicación lo soluciona.
+Antes de começar a codificar, você deve entender o problema que deseja resolver e como o aplicativo o resolve.
 
-* Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
-* Luego valida esta solución con una compañera (pedir feedback).
-* Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un nuevo prototipo usando alguna herramienta para diseño de prototipos ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/), [Google Slides](https://www.google.com/intl/es/slides/about/), etc.) Estos puntos los presentarás en el `README.md`.
+* Trabalhe seu primeiro protótipo com papel e lápis (preto e branco).
+* Em seguida, valide esta solução com um companheiro (peça feedback).
+* Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um novo protótipo empregando alguma ferramenta para desing de protótipos([ Balsamiq ](https://balsamiq.com/), [ Figma ](https://www.figma.com/), [ Slides do Google ](https://www.google.com/intl/es/slides/about/), etc.) Esses pontos serão apresentados no ` README.md `.
 
-### Scripts / Archivos
+### Scripts / Arquivos
 
-#### General
+#### Geral
 
 ##### `README.md`
 
-Debe contener lo siguiente:
+Ele deve conter o seguinte:
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
+* Um título com o nome do seu projeto.
+* Um resumo de 1 ou 2 linhas sobre o seu projeto.
+* A imagem final do seu projeto.
+* Pesquisa UX:
+  1. Explicar quem irá usá-lo e os objetivos quanto ao produto.
+  2. Explicar como o produto resolve os problemas / necessidades desses usuários.
+  3. Em seguida, você colocará a foto do seu primeiro protótipo no papel.
+  4. Adicione um resumo do feedback recebido indicando as melhorias a serem feitas.
+  5. Imagem do protótipo final.
 
-#### Visualmente (HTML y CSS)
+#### Visualmente (HTML e CSS)
 
-Deberás maquetar de forma exacta el prototipo final que hiciste en la herramienta de diseño de prototipos que escogiste utilizando HTML y CSS. En este momento elegirás los colores, tipo de fuente, etc a usar.
+Você precisará definir exatamente o protótipo final que você criou na ferramenta de design, de protótipo que você escolheu usando HTML e CSS. Nesse momento, você escolherá as cores, o tipo de fonte etc. que irá usar.
 
-A continuación describimos los archivos que utilizarás:
+Abaixo, descrevemos os arquivos que você usará:
 
 ##### `src/index.html`
 
-En este archivo va el contenido que se mostrará al usuario (esqueleto HTML). Encontrarás 3 etiquetas iniciales, las cuales si deseas puedes borrar y empezar de cero:
+Este arquivo contém o conteúdo que será mostrado ao usuário (esqueleto HTML). Você encontrará três marcadores iniciais que, se você quiser, pode excluir e começar do zero:
 
-* `<header>`: encabezado de tu proyecto.
-* `<main>`: contenido principal de tu proyecto.
-* `<footer>`: pie de página de tu proyecto.
+* `<header>`: cabeçalho do seu projeto.
+* `<main>`: conteúdo principal do seu projeto.
+* `<footer>`: rodapé do seu projeto.
 
 ##### `src/style.css`
 
-Este archivo debe contener las reglas de estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el uso de frameworks de CSS (Bootstrap, materialize, etc).
+Este arquivo deve conter as regras de estilo. Queremos que você escreva suas próprias regras, é por isso que o uso de estruturas CSS (Bootstrap, materialize etc.) NÃO é permitido.
 
-#### Funcionalmente (JavaScript - pruebas unitarias)
+#### Funcionalmente (JavaScript - testes de unidade)
 
-* La lógica del proyecto debe estar implementada completamente en JavaScript.
-* En este proyecto NO está permitido usar librerías o frameworks, sólo JavaScript puro también conocido como Vanilla JavaScript.
-* No se debe utilizar la _pseudo-variable_ `this`.
+* A lógica do projeto deve ser totalmente implementada em JavaScript.
+* NÃO é permitido usar bibliotecas ou estruturas neste projeto, apenas JavaScript puro, também conhecido como JavaScript Vanilla.
+* A pseudo variável `this`  não se deve ser utilizada.
 
-Vas a tener 2 archivos JavaScript separando responsabilidades, a continuación indicamos qué harás en cada archivo:
+Você terá 2 arquivos JavaScript que separam responsabilidades, eis o que você fará em cada arquivo:
 
 ##### `src/validator.js`
 
-Acá escribirás las funciones necesarias para que el usuario pueda verificar la tarjeta de crédito y ocultar los dígitos de su número de tarjeta. Esta función debe ser pura e independiente del DOM.
+Aqui você escreverá as funções necessárias para que o usuário possa verificar o cartão de crédito e ocultar os dígitos do número do cartão. Esta função deve ser pura e independente do DOM.
 
-Para esto debes implementar el **objeto `validator`**, el cual ya se encuentra _exportado_ en el _boilerplate_. Este objeto (`validator`) contiene dos métodos (`isValid` y `maskify`):
+Para isso, você deve implementar o ** validador de objeto ` ` **, que já está _ exportado _ no _ padrão _. Este objeto (`validator`) contiene dos métodos (`isValid` y `maskify`):
 
 * **`validator.isValid(creditCardNumber)`**: `creditCardNumber` es un `string` con el número de tarjeta que se va a verificar. Esta función debe retornar un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
 
