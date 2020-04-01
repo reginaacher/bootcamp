@@ -3,9 +3,9 @@
 ## Índice
 
 * [1. Preâmbulo](#1-preámbulo)
-* [2. Resumo do Projeto](#2-resumen-del-proyecto)
+* [2. Resumo do projeto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizaje)
-* [4. Considerações Gerais](#4-consideraciones-generales)
+* [4. Considerações gerais](#4-consideraciones-generales)
 * [5. Critérios mínimos de aceitação do projeto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Dicas e leituras adicionais](#6-pistas-tips-y-lecturas-complementarias)
 
@@ -17,7 +17,7 @@ O algoritmo de Luhn, também chamado de módulo 10, é um método de soma de ver
 
 Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem ser multiplicados por dois; se esse número for maior ou igual a 10, devemos adicionar os dígitos do resultado; o número a verificar será válido se a soma de seus dígitos finais for um múltiplo de 10.
 
-![Gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ## 2. Resumo do Projeto
 
@@ -165,11 +165,11 @@ Nesse arquivo, você deverá concluir os testes de unidade das funções `valida
 
 1. Antes de tudo, verifique se você possui um :pencil: editor de texto em boa condição, algo como [Atom](https://atom.io/) ou [Code](https://code.visualstudio.com/).
 2. Para executar os comandos abaixo, você precisará de um :shell: [Shell UNIX](https://github.com/Laboratoria/bootcamp/tree/master/topics/shell), que é um pequeno programa que interpreta linhas de comando (command-line interpreter), além de ter o [git](https://github.com/Laboratoria/bootcamp/tree/master/topics/scm/01-git) instalado. Se você usa um sistema operacional "UNIX-like", como GNU/Linux ou MacOS, já possui um _shell_ (terminal) instalado por padrão (e provavelmente `git`) também. Se você usa o Windows, pode utilizar a versão completa do [Cmder](https://cmder.net/) que inclui [Git bash](https://git-scm.com/download/win) e, se tiver o Windows 10 ou superior, pode usar o [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.github.com/articles/fork-a-repo/) do repo da sua coorte, seus _ treinadores _ compartilharão um _ link _ com você para um repo e fornecerão acesso de leitura nesse repositório. O outro membro da equipe deve bifurcar ** do repositório do seu companheiro ** e [ configurar ](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um ` remoto ` para este.
-4. : arrow_down: [ Clone ](https://help.github.com/articles/cloning-a-repository/) seu _ fork _ no seu computador (cópia local).
-5. 📦 Instale as dependências do projeto com o comando ` npm install `. Isso pressupõe que você instalou [ Node.js ](https://nodejs.org/) (que inclui [ npm ](https://docs.npmjs.com/)).
-6. Se tudo correu bem, você poderá executar o: traffic_light: testes de unidade com o comando (unit tests) ` npm test `.
-7. Para visualizar a interface do seu programa no navegador, use o comando ` npm start ` para iniciar o servidor da web e vá para ` http: // localhost: 5000 ` no seu navegador.
+3. Uma das integrantes da equipe deve fazer um :fork_and_knife: [bifurcação](https://help.github.com/articles/fork-a-repo/) do repositório da sua coorte, seus _treinadores_ compartilharão um _link_ com você para um repositório e fornecerão acesso de leitura nesse repositório. A outra integrante da equipe deve fazer uma bifurcação **do repositório da sua companheira** e [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote` para ele.
+4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/) sua _bifurcação_ no seu computador (cópia local).
+5. 📦 Instale as dependências do projeto com o comando `npm install`. Isso pressupõe que você instalou [Node.js](https://nodejs.org/) (que inclui [npm](https://docs.npmjs.com/)).
+6. Se tudo correu bem, você poderá executar :traffic_light: testes de unidade (unit tests) com o comando `npm test`.
+7. Para visualizar a interface do seu programa no navegador, use o comando `npm start` para iniciar o servidor da web e acesse `http://localhost:5000` no seu navegador.
 8. Comece a codificar! :rocket:
 
 ### Recursos e tópicos relacionados
@@ -196,20 +196,20 @@ Design da experiência do usuário (User Experience Design):
 
 * Concepção
 * Prototipagem (desenho)
-* Testes e Repetição
+* Testes e iteração
 
 Desenvolvimento de front-end:
 
 * Valores
 * Tipos
 * Variáveis
-* Controle de Fluxo
+* Controle de fluxo
 * Testes unitários
 * [Documentação do NPM](https://docs.npmjs.com/)
 
 Organização do Trabalho:
 
-* [Metodologias Ágeis](https://www.youtube.com/watch?v=v3fLx7VHxGM)
+* [Metodologias ágeis](https://www.youtube.com/watch?v=v3fLx7VHxGM)
 * [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum em Detalhe](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). Não é esperado que você faça tudo isso neste projeto. Vamos nos aprofundar gradualmente ao longo do - bootcamp
+* [Scrum em detalhe](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). Não é esperado que você faça tudo isso neste projeto. Vamos nos aprofundar gradualmente ao longo do -_bootcamp_.
 * [Blog: como funciona o algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
