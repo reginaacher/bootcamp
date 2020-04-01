@@ -119,7 +119,7 @@ Este arquivo contém o conteúdo que será exibido ao usuário (esqueleto HTML).
 
 ##### `src/style.css`
 
-Este arquivo deve conter as regras de estilo. Queremos que você escreva suas próprias regras, é por isso que o uso de estruturas CSS (Bootstrap, materialize etc.) NÃO é permitido.
+Este arquivo deve conter as regras de estilo. Queremos que você escreva suas próprias regras. Por isso, o uso de estruturas CSS (Bootstrap, materialize etc.) NÃO é permitido.
 
 #### Funcionalmente (JavaScript - testes de unidade)
 
@@ -133,11 +133,11 @@ Você terá 2 arquivos JavaScript que separam responsabilidades, eis o que você
 
 Aqui você escreverá as funções necessárias para que o usuário possa verificar o cartão de crédito e ocultar os dígitos do número do cartão. Esta função deve ser pura e independente do DOM.
 
-Para isso, você deve implementar o ** validador de objeto ` ` **, que já está _ exportado _ no _ padrão _. Este objeto (` validador `) contém dois métodos (` isValid ` e ` maskify`):
+Para isso, você deve implementar o **validador `de objeto`**, que já está _exportado_ no _boilerplate_. Este objeto (`validador`) contém dois métodos (`isValid` e `maskify`):
 
-* **` validator.isValid (creditCardNumber) `** ` creditCardNumber ` é uma ` sequência ` com o número do cartão a ser verificado. Esta função deve retornar um ` boolean `, dependendo de sua validade, de acordo com o [ algoritmo Luhn ](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
+* **`validator.isValid(creditCardNumber)`**: `creditCardNumber` é um `string` com o número do cartão a ser verificado. Esta função deve retornar um `boolean`, dependendo de sua validade, de acordo com o [algoritmo Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
 
-* **` validator.maskify (creditCardNumber) `**: ` creditCardNumber ` é uma ` sequência ` com o número do cartão e esta função deve retornar uma ` sequência </ 1 > onde todos, exceto os últimos quatro caracteres, são substituídos por um número (<code> # `) ou 🐱. Essa função deve sempre manter os quatro últimos caracteres intactos, mesmo quando a ` string ` for mais curta.
+* **`validator.maskify(creditCardNumber)`**: `creditCardNumber` é um `string` com o número do cartão e esta função deve retornar um `string` onde todos, exceto os últimos quatro caracteres, são substituídos por um número (`#`) ou 🐱. Essa função deve sempre manter os quatro últimos caracteres intactos, mesmo quando o `string` for mais curto.
 
     Exemplo de uso:
 
@@ -151,38 +151,26 @@ Para isso, você deve implementar o ** validador de objeto ` ` **, que já está
 ##### `src/index.js
 `
 
-Aqui, você escreverá todo o código relacionado à interação do DOM (selecione, atualize e manipule elementos do DOM e eventos). Ou seja, nesse arquivo, você precisará ativar as funções ` isValid ` e ` maskify ` conforme seja necessário para atualizar o resultado na tela (UI).
+Aqui, você escreverá todo o código relacionado à interação do DOM (selecione, atualize e manipule elementos do DOM e eventos). Ou seja, nesse arquivo, você precisará ativar as funções `isValid` e `maskify` conforme seja necessário para atualizar o resultado na tela (UI).
 
-##### `test/validator.spec.js
-`
+##### `test/validator.spec.js`
 
-Nesse arquivo, você deverá concluir os testes de unidade das funções ` validator.isValid (creditCardNumber) ` e ` validator.maskify (creditCardNumber) ` implementadas em ` validator.js </ 0 > usando <a href="https://jestjs.io/es-ES/"> Jest </a>.
-Seus testes de unidade devem proporcionar 70% nas <em x-id="4"> coverage (coberturas) </em>, <em x-id="4"> statements (instruções) </em>, <em x-id="4"> functions (funções) </em> e lines <em x-id="4">  (linhas); e um mínimo de 50% de <em x-id="4"> ramificações </em>.</p>
+Nesse arquivo, você deverá concluir os testes de unidade das funções `validator.isValid(creditCardNumber)` e `validator.maskify(creditCardNumber)` implementadas em `validator.js` usando [Jest](https://jestjs.io/es-ES/). Seus testes de unidade devem proporcionar 70% em _coverage_ (cobertura), _statements_ (instruções), _functions_ (funções) e _lines_ (linhas); e um mínimo de 50% de _branches_ (ramificações).
 
-<hr />
+***
 
-<h2 spaces-before="0">6. Dicas, conselhos e leituras adicionais</h2>
+## 6. Dicas, conselhos e leituras adicionais
 
-<h3 spaces-before="0">Primeiros passos
-</h3>
+### Primeiros passos
 
-<ol start="1">
-<li><p spaces-before="0">Antes de tudo, verifique se você possui um: pencil: editor de texto em boa condição, algo como <a href="https://atom.io/"> Atom </a> ou <a href="https://code.visualstudio.com/"> Code </a>.</p></li>
-<li><p spaces-before="0">Para executar os comandos abaixo, você precisará de um: shell:
-<a href="https://github.com/Laboratoria/bootcamp/tree/master/topics/shell"> Shell UNIX </a>, que é um pequeno programa que interpreta linhas de comando (command-line
-interpreter), além de ter o <a href="https://github.com/Laboratoria/bootcamp/tree/master/topics/scm/01-git"> git </a> instalado. Se você usa um sistema operacional "UNIX-like", como GNU / Linux ou MacOS, já possui um <em x-id="4"> shell </em> (terminal) instalado por padrão (e provavelmente <code> git `) também. Se você usa o Windows, pode utilizar a versão completa do [ Cmder ](https://cmder.net/) que inclui [ Git bash ](https://git-scm.com/download/win) e, se tiver o Windows 10 ou superior, pode usar o [ Windows Subsystem for Linux ](https://docs.microsoft.com/en-us/windows/wsl/install-win10).</li>
-3
-Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.github.com/articles/fork-a-repo/) do repo da sua coorte, seus _ treinadores _ compartilharão um _ link _ com você para um repo e fornecerão acesso de leitura nesse repositório. O outro membro da equipe deve bifurcar ** do repositório do seu companheiro ** e [ configurar ](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um ` remoto ` para este.
-4
-: arrow_down: [ Clone ](https://help.github.com/articles/cloning-a-repository/) seu _ fork _ no seu computador (cópia local).
-5
-📦 Instale as dependências do projeto com o comando ` npm install `. Isso pressupõe que você instalou [ Node.js ](https://nodejs.org/) (que inclui [ npm ](https://docs.npmjs.com/)).
-6
-Se tudo correu bem, você poderá executar o: traffic_light: testes de unidade com o comando (unit tests) ` npm test `.
-7
-Para visualizar a interface do seu programa no navegador, use o comando ` npm start ` para iniciar o servidor da web e vá para ` http: // localhost: 5000 ` no seu navegador.
-8
-Comece a codificar! :rocket: </ol>
+1. Antes de tudo, verifique se você possui um :pencil: editor de texto em boa condição, algo como [Atom](https://atom.io/) ou [Code](https://code.visualstudio.com/).
+2. Para executar os comandos abaixo, você precisará de um :shell: [Shell UNIX](https://github.com/Laboratoria/bootcamp/tree/master/topics/shell), que é um pequeno programa que interpreta linhas de comando (command-line interpreter), além de ter o [git](https://github.com/Laboratoria/bootcamp/tree/master/topics/scm/01-git) instalado. Se você usa um sistema operacional "UNIX-like", como GNU/Linux ou MacOS, já possui um _shell_ (terminal) instalado por padrão (e provavelmente `git`) também. Se você usa o Windows, pode utilizar a versão completa do [Cmder](https://cmder.net/) que inclui [Git bash](https://git-scm.com/download/win) e, se tiver o Windows 10 ou superior, pode usar o [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+3. Um dos membros da equipe deve fazer: fork_and_knife: [ fork ](https://help.github.com/articles/fork-a-repo/) do repo da sua coorte, seus _ treinadores _ compartilharão um _ link _ com você para um repo e fornecerão acesso de leitura nesse repositório. O outro membro da equipe deve bifurcar ** do repositório do seu companheiro ** e [ configurar ](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um ` remoto ` para este.
+4. : arrow_down: [ Clone ](https://help.github.com/articles/cloning-a-repository/) seu _ fork _ no seu computador (cópia local).
+5. 📦 Instale as dependências do projeto com o comando ` npm install `. Isso pressupõe que você instalou [ Node.js ](https://nodejs.org/) (que inclui [ npm ](https://docs.npmjs.com/)).
+6. Se tudo correu bem, você poderá executar o: traffic_light: testes de unidade com o comando (unit tests) ` npm test `.
+7. Para visualizar a interface do seu programa no navegador, use o comando ` npm start ` para iniciar o servidor da web e vá para ` http: // localhost: 5000 ` no seu navegador.
+8. Comece a codificar! :rocket:
 
 ### Recursos e tópicos relacionados
 
