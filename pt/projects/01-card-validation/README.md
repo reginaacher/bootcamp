@@ -15,7 +15,7 @@
 
 O algoritmo de Luhn, também chamado de módulo 10, é um método de soma de verificação, usado para validar números de identificação; como o IMEI de telefones celulares, cartões de crédito etc.
 
-Este algoritmo es simple. Obtemos o inverso do número a ser verificado (que contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem ser multiplicados por dois; se esse número for maior ou igual a 10, devemos adicionar os dígitos do resultado; o número a verificar será válido se a soma de seus dígitos finais for um múltiplo de 10.
+Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem ser multiplicados por dois; se esse número for maior ou igual a 10, devemos adicionar os dígitos do resultado; o número a verificar será válido se a soma de seus dígitos finais for um múltiplo de 10.
 
 ![Gráfico do algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
@@ -23,11 +23,11 @@ Este algoritmo es simple. Obtemos o inverso do número a ser verificado (que con
 
 Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário validar o número de um cartão de crédito.  Além disso, você precisará implementar a funcionalidade para ocultar todos os dígitos de um cartão, exceto os quatro últimos.
 
-O tema é livre. Você deve pensar em quais situações da vida real um cartão de crédito precisaria ser validado e em como deveria ser a experiência do usuário (telas, explicações, mensagens, cores, marca?) Etc.
+O tema é livre. Você deve pensar em quais situações da vida real um cartão de crédito precisaria ser validado e em como deveria ser a experiência do usuário (telas, explicações, mensagens, cores, marca?) etc.
 
 ## 3. Objetivos de Aprendizagem
 
-Trabalhando em pares, eles aprenderão a criar um aplicativo Web que irá interagir com o usuário final através do navegador, usando HTML, CSS e JavaScript como tecnologias.
+Trabalhando em pares, vocês aprenderão a criar um aplicativo Web que irá interagir com x usuárix final através do navegador, usando HTML, CSS e JavaScript como tecnologias.
 
 Simplificando, você aprenderá a:
 
@@ -43,18 +43,18 @@ Simplificando, você aprenderá a:
 * Permitir ao usuário que interaja com elementos do DOM e faça com que o aplicativo responda quando ocorrerem esses **eventos do DOM**.
 * Manipular _**strings**_ (cadeias de texto).
 * Empregar controle de fluxo (loops, condicionais, ...).
-* Atualizar a tela com os resultados (manipular o DOM) mediante **innerHTML** o **textContent**.
-* ** Implementar funções **, dada uma descrição do seu comportamento.
-* Verificar se suas funções realizam as tarefas para as quais foram criadas (** testes de unidade </em>) com [ Jest ](https://jestjs.io/es-ES/) **).
-* Configure sua conta git.
-* Realizar _ bifurque _ e _ clonar _ o repositório do projeto.
+* Atualizar a tela com os resultados (**manipular o DOM**) mediante **innerHTML** ou **textContent**.
+* ** Implementar funções**, dada uma descrição do seu comportamento.
+* Verificar se suas funções realizam as tarefas para as quais foram criadas (**testes de unidade (</em>unit tests</1>) com [Jest](https://jestjs.io/es-ES/)**).
+* Configurar sua conta git.
+* Realizar _bifurcação_ e _clonar_ o repositório do projeto.
 * Manter atualizadas as alterações em seu repositório remoto (commit, pull, push).
-* Implantar seu projeto nas [ Páginas do GitHub ](https://pages.github.com).
+* Implantar seu projeto nas [Páginas do GitHub](https://pages.github.com).
 
 ## 4. Considerações Gerais
 
 * A equipe de treinadores fornecerá a você sugestões de horários e orientações sobre como trabalhar sozinho ou em equipe. Lembre-se que cada pessoa aprende em um ritmo diferente.
-* O projeto será entregue carregando seu código no GitHub (commit / push) e a interface será implantada usando as páginas do GitHub. Caso desconheça o GitHub não se preocupe, o conhecerá ao longo do projeto.
+* O projeto será entregue carregando seu código no GitHub (commit/push) e a interface será implantada usando as páginas do GitHub. Caso desconheça o GitHub, não se preocupe, pois você vai aprender sobre ele ao longo do projeto.
 
 ## 5. Critérios mínimos de aceitação do projeto
 
@@ -62,7 +62,7 @@ Empregue apenas caracteres numéricos (dígitos) no cartão para validar [0-9].
 
 ### Definição do Produto
 
-No ` README.md `, conte-nos como você pensou sobre os usuários e qual foi seu processo para definir o produto final a nível da experiência e da interface.
+No `README.md`, conte-nos como você pensou sobre os usuários e qual foi seu processo para definir o produto final a nível da experiência e da interface.
 
 * Quem são os principais usuários do produto.
 * Quais os objetivos destes usuários em relação a seu produto.
@@ -83,7 +83,7 @@ Antes de começar a codificar, você deve entender o problema que deseja resolve
 
 * Trabalhe seu primeiro protótipo com papel e lápis (preto e branco).
 * Em seguida, valide esta solução com um companheiro (peça feedback).
-* Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um novo protótipo empregando alguma ferramenta para desing de protótipos([ Balsamiq ](https://balsamiq.com/), [ Figma ](https://www.figma.com/), [ Slides do Google ](https://www.google.com/intl/es/slides/about/), etc.) Esses pontos serão apresentados no ` README.md `.
+* Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um novo protótipo empregando alguma ferramenta para design de protótipos ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/), [Apresentações Google](https://www.google.com/intl/es/slides/about/) etc.) Esses pontos serão apresentados no `README.md`.
 
 ### Scripts / Arquivos
 
@@ -98,14 +98,14 @@ Ele deve conter o seguinte:
 * A imagem final do seu projeto.
 * Pesquisa UX:
   1. Explicar quem irá usá-lo e os objetivos quanto ao produto.
-  2. Explicar como o produto resolve os problemas / necessidades desses usuários.
+  2. Explicar como o produto resolve os problemas/necessidades desses usuários.
   3. Em seguida, você colocará a foto do seu primeiro protótipo no papel.
-  4. Adicione um resumo do feedback recebido indicando as melhorias a serem feitas.
+  4. Adicionar um resumo do feedback recebido indicando as melhorias a serem feitas.
   5. Imagem do protótipo final.
 
 #### Visualmente (HTML e CSS)
 
-Você precisará definir exatamente o protótipo final que você criou na ferramenta de design, de protótipo que você escolheu usando HTML e CSS. Nesse momento, você escolherá as cores, o tipo de fonte, etc. que irá usar.
+Você precisará definir exatamente o protótipo final que você criou na ferramenta de design de protótipos que você escolheu usando HTML e CSS. Nesse momento, você escolherá as cores, o tipo de fonte etc. que irá usar.
 
 Abaixo, descrevemos os arquivos que você usará:
 
