@@ -47,7 +47,7 @@ Simplificando, você aprenderá a:
 * ** Implementar funções**, dada uma descrição do seu comportamento.
 * Verificar se suas funções realizam as tarefas para as quais foram criadas (**testes de unidade (</em>unit tests</1>) com [Jest](https://jestjs.io/es-ES/)**).
 * Configurar sua conta git.
-* Realizar _fork_ e _clonar_ o repositório do projeto.
+* Realizar _bifurcação_ e _clonar_ o repositório do projeto.
 * Manter atualizadas as alterações em seu repositório remoto (commit, pull, push).
 * Implantar seu projeto nas [Páginas do GitHub](https://pages.github.com).
 
